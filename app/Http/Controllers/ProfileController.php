@@ -34,11 +34,7 @@ class ProfileController extends Controller
         $user_following_count = follow::where('owner_id',$user_id->id)->where('is_follow',1)->count();
         $followers = follow::where('following_id',$user_id->id)->where('is_follow',1)->get();
         $is_follow = follow::where('following_id',$user_id->id)->first(['is_follow']);
-<<<<<<< HEAD
         $posts_count = postcontent::where('user_id', $user_id)->count();
-=======
-        $posts_count = postcontent::where('user_id', Auth::user()->id)->count();
->>>>>>> be6a45744d638fd603b7a1682d6cb74d29190ca6
 
         return view('profile')->with(array('users' => $users, 'collections' => $collections,
                                 'posts' => $posts, 'username' => $username, 'comments' => $comments,

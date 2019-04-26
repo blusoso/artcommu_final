@@ -48705,13 +48705,6 @@ if ($('#profileheader-page').length > 0) {
         'following_id': following_id
       },
       success: function success(result) {
-<<<<<<< HEAD
-=======
-        // location.reload();
-        // alert(result);
-        alert(result); // console.log(result[1]);
-
->>>>>>> be6a45744d638fd603b7a1682d6cb74d29190ca6
         if (result[0] == 1) {
           $('#follow-btn').text('Unfollow');
           $('#follow-btn').addClass('unfollow-active2');

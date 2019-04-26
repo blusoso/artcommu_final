@@ -73,13 +73,6 @@ class StartfollowController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-<<<<<<< HEAD
-=======
-    public function update(Request $request, $id)
-    {
-        //
-    }
->>>>>>> be6a45744d638fd603b7a1682d6cb74d29190ca6
 
     /**
      * Remove the specified resource from storage.

@@ -109,11 +109,7 @@ class SettingAccountController extends Controller
             Rule::unique('users')->ignore($request->input('user_id')),
         ],
         'display_name' => [
-<<<<<<< HEAD
             'required', 'max:20',
-=======
-            'required', 'max:20', 'min:6',
->>>>>>> be6a45744d638fd603b7a1682d6cb74d29190ca6
             Rule::unique('users')->ignore($request->input('user_id')),
         ],
         'bio_link' => [
