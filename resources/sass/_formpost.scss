@@ -1,0 +1,72 @@
+#form-post {
+  .card.post-card {
+    background-color: #E8E9F1;
+    border: transparent;
+    .avatar-post {
+      width: 55px;
+      height: 55px;
+      position: relative;
+      border-radius: 100%;
+      .imageAvatar-post {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    input#images {
+      display: none;
+      + label {
+        font-size: 18px;
+        width: 34px;
+        height: 34px;
+        margin-bottom: 0;
+        border-radius: 100%;
+        border: 1px solid transparent;
+        cursor: pointer;
+        font-weight: normal;
+        transition: all .2s ease-in-out;
+        &:after {
+            content: "\f03e";
+            font-family: 'FontAwesome';
+            color: #757575;
+        }
+      }
+    }
+    #list-view {
+    list-style: none;
+    overflow: hidden;
+    }
+
+    #list-view li {
+        float: left;
+        margin: 0 10px 10px 0;
+        padding: 4px;
+        width: 110px;
+        height: 110px;
+        overflow: hidden;
+        border: 2px solid #f7f7f7f7;
+        border-radius: 10px;
+        box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.02);
+    }
+
+    #list-view li img, #list-view li canvas {
+        display: inline-block;
+        vertical-align: top;
+    }
+    #post-btn {
+      width: 25%;
+      color: #fff;
+      font-weight: bold;
+      background-color: #8B8BF8;
+      border: none;
+      border-radius: 20px;
+      transition: 0.3s;
+      &:hover {
+        background-color: #5a55d1;
+      }
+    }
+  }
+}

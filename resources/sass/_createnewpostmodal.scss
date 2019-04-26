@@ -1,0 +1,38 @@
+#createnewpost {
+  .avatar-post {
+    width: 75px;
+    height: 75px;
+    position: relative;
+    border-radius: 100%;
+    .imageAvatar-post {
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  
+  #list-viewmodal {
+    list-style: none;
+    overflow: hidden;
+  }
+
+  #list-viewmodal li {
+    float: left;
+    margin: 0 10px 10px 0;
+    padding: 4px;
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+    border: 2px solid #f7f7f7f7;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.02);
+  }
+
+  #list-viewmodal li img, #list-viewmodal li canvas {
+      display: inline-block;
+      vertical-align: top;
+  }
+}

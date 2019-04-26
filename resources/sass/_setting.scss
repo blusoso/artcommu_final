@@ -1,0 +1,149 @@
+#page-setting {
+  .container-fluid {
+    .avatar {
+      width: 150px;
+      height: 150px;
+      position: relative;
+      border-radius: 100%;
+      border: 6px solid #F8F8F8;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+      .imageAvatar2 {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .avatar-edit {
+        position: absolute;
+        z-index: 1;
+        top: 1%;
+        left: 78%;
+          input {
+              display: none; //hide choose file
+              + label { //circle of input file
+                  display: inline-block;
+                  width: 34px;
+                  height: 34px;
+                  margin-bottom: 0;
+                  border-radius: 100%;
+                  background: #FFFFFF;
+                  border: 1px solid transparent;
+                  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+                  cursor: pointer;
+                  font-weight: normal;
+                  transition: all .2s ease-in-out;
+                  &:hover {
+                      background: #f1f1f1;
+                      border-color: #d6d6d6;
+                  }
+                  &:after {
+                      content: "\f040";
+                      font-family: 'FontAwesome';
+                      color: #757575;
+                      position: absolute;
+                      top: 16%;
+                      left: 0;
+                      right: 0;
+                      text-align: center;
+                      margin: auto;
+                  }
+              }
+          }
+      }
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    a.setting-menu {
+      text-decoration: none;
+      color: #333;
+      .card-menu:hover {
+        background-color: #E8E9F1;
+      }
+    }
+    .menu-active {
+      font-weight: bold;
+    }
+    .menu-card-active {
+      background-color: #E8E9F1;
+      border: transparent;
+    }
+    .save-account-btn, #save-password-btn {
+      margin-left: 50%;
+    }
+    h5 {
+      font-weight: bold;
+    }
+    .avatar-upload {
+      position: relative;
+      left: 45%;
+      .avatar-edit {
+        position: absolute;
+        right: 5%;
+        z-index: 1;
+        top: 6%;
+          input {
+              display: none; //hide choose file
+              + label { //circle of input file
+                  display: inline-block;
+                  width: 34px;
+                  height: 34px;
+                  margin-bottom: 0;
+                  border-radius: 100%;
+                  background: #FFFFFF;
+                  border: 1px solid transparent;
+                  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+                  cursor: pointer;
+                  font-weight: normal;
+                  transition: all .2s ease-in-out;
+                  &:hover {
+                      background: #f1f1f1;
+                      border-color: #d6d6d6;
+                  }
+                  &:after {
+                      content: "\f040";
+                      font-family: 'FontAwesome';
+                      color: #757575;
+                      position: absolute;
+                      top: 16%;
+                      left: 0;
+                      right: 0;
+                      text-align: center;
+                      margin: auto;
+                  }
+              }
+          }
+      }
+      .avatar-preview {
+          width: 200px;
+          height: 200px;
+          position: relative;
+          border-radius: 100%;
+          border: 6px solid #F8F8F8;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+          > div {
+              width: 100%;
+              height: 100%;
+              border-radius: 100%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+          }
+      }
+    }
+  }
+}
+
+p.ex-bio {
+  font-weight: bold;
+  color: #8e8e8e;
+  letter-spacing: .5px;
+  font-size: 12px;
+}
+.hidden {
+  display:none;
+}

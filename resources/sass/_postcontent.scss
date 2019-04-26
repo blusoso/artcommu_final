@@ -1,0 +1,132 @@
+#postcontent {
+  border-bottom: 1px solid #f7f7f7;
+  .avatar-post {
+    width: 75px;
+    height: 75px;
+    position: relative;
+    border-radius: 100%;
+    border: 1px solid #f7f7f7;
+    .imageAvatar-post {
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  .image-post {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    .imagePost {
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  .time-post, .time-comment {
+    font-size: 12px;
+    color: #adadad;
+  }
+  .post {
+    border-bottom: 1px solid #f7f7f7;
+    .user-post {
+      a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        letter-spacing: 0.8px;
+      }
+    }
+    .time-post {
+      text-align: right;
+    }
+    .delete-post {
+      font-weight: bold;
+      color: red;
+      cursor: pointer;
+    }
+    .heart-post {
+      color:#aab8c2;
+      cursor: pointer;
+      font-size: 1.7em;
+    }
+    .heart-post-active {
+      color: #e2264d;
+    }
+    .comment {
+      cursor: pointer;
+    }
+    .save-to-collection {
+      .dropdown {
+        float: left;
+      }
+    }
+    .saveToCollection-btn {
+      border-radius: 20px;
+      border: none;
+      color: #333;
+      background-color: #efefef;
+      transition: 0.3s;
+      &:hover {
+        color: #fff;
+        background-color: #6665f5;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+  .imagePost {
+    cursor: pointer;
+  }
+  .comment-card {
+    background-color: #E8E9F1;
+    border: transparent;
+  }
+  .comment-card, .comment-content-card {
+    .avatar-comment {
+      width: 55px;
+      height: 55px;
+      position: relative;
+      border-radius: 100%;
+      .imageAvatar-comment {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+  #commentContent {
+    border-color: rgba(0, 0, 0, 0.05);
+    .comment-content-card {
+      .each-comment {
+        border-bottom: 1px solid #f7f7f7;
+        a {
+          text-decoration: none;
+          color: #333;
+          font-weight: bold;
+          letter-spacing: 0.8px;
+        }
+        .delete-comment {
+          font-weight: bold;
+          color: #aab8c2;
+          cursor: pointer;
+        }
+        .heart-comment {
+          color:#aab8c2;
+          cursor: pointer;
+          font-size: 1.2em;
+        }
+        .heart-comment-active {
+          color: #e2264d;
+        }
+      }
+    }
+  }
+}

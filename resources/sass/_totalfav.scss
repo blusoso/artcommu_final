@@ -1,0 +1,65 @@
+#totalfav-page {
+  .card {
+    width: 19%;
+    float: left;
+    border: none;
+    box-shadow: 2px 2px 11px 0px rgba(0, 0, 0, 0.1);
+    .post-avatar {
+      width: 50px;
+      height: 50px;
+      position: relative;
+      border-radius: 100%;
+      float: left;
+      .postAvatar {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    a{
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      letter-spacing: 0.8px;
+    }
+    .image-post {
+      width: 100%;
+      height: 280px;
+      position: relative;
+      border: 1px solid #e6ecf0;
+      .imagePost {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+      }
+    }
+    .heartimgfav, .heartimgfav-otheruser {
+      color:#aab8c2;
+      cursor: pointer;
+      font-size: 1.2em;
+    }
+    .heartimg-active {
+      color: #e2264d;
+    }
+    .saveToCollection-btn {
+      color: #fff;
+      border-radius: 20px;
+      border: none;
+      color: #333;
+      background-color: #efefef;
+      transition: 0.3s;
+      &:hover {
+        color: #fff;
+        background-color: #6665f5;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
